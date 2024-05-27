@@ -6,7 +6,10 @@
 
 ### top
 
->인용문
+- top 명령어 수행 시 나타나는 내용
+
+![KakaoTalk_20240528_001110658](https://github.com/rkrkrkwk/oss_test/assets/166924793/37b3e9c8-b7d5-4fd3-891f-80633d20eb90)
+
 
 ### ps
 
