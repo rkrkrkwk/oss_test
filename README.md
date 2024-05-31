@@ -4,7 +4,7 @@
 
 리눅스 명령어 중에서 **top, ps, jobs, kill** 명령어에 대해서 조사해보자!
 
-### top
+## top
 
 시스템의 상태를 전반적으로 알 수 있게 해준다.
 
@@ -105,8 +105,8 @@ COMMAND : 명령어 이름
 
 ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/29464940-4559-4a0b-ab05-f333905bb8f4)
 
-### ps
+## ps
 
-### jobs
+## jobs
 
-### kill
+## kill
