@@ -11,7 +11,7 @@
 - 옵션 없이 입력하면 interval 간격(기본 3초)으로 화면을 갱신하며 정보를 보여준다.
 
 ###### top 명령어 수행 시 나타나는 내용
-
+```
 top - 09:37:25 up 12 min,  0 users,  load average: 0.02, 0.08, 0.09
 Tasks:   2 total,   1 running,   1 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.1 us,  0.2 sy,  0.0 ni, 98.8 id,  0.9 wa,  0.0 hi,  0.0 si,  0.0 st
@@ -21,7 +21,7 @@ MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.  14943.3 avail Mem
   PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
     1 root      20   0    4248   3324   2784 S   0.0   0.0   0:00.00 bash
    13 root      20   0    6096   3192   2684 R   0.0   0.0   0:00.06 top
-
+```
 
 - `top - 09:37:25 up 12 min,  0 users,`
 
