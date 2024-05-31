@@ -115,55 +115,55 @@ COMMAND : 명령어 이름
 
 - Z
 
- ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/f3c0d218-bd3e-4b32-99ff-21f292e2bd02)
+![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/f3c0d218-bd3e-4b32-99ff-21f292e2bd02)
 
- 각각 요소의 색을 커스텀 가능하다.
+각각 요소의 색을 커스텀 가능하다.
 
- ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/4b108238-8eba-4406-9ce8-cf9877149952)
+![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/4b108238-8eba-4406-9ce8-cf9877149952)
 
 - E , e
 
- ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/64474fba-17d7-4d81-9b95-2ee5b1a4e8f6)
+![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/64474fba-17d7-4d81-9b95-2ee5b1a4e8f6)
 
- 단위를 바꿀 수 있다.
+단위를 바꿀 수 있다.
 
 - t, m
 
- ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/1546fd46-e6a1-4e7b-b236-a73590a8df1c)
+![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/1546fd46-e6a1-4e7b-b236-a73590a8df1c)
 
- 메모리, cpu 사용률을 시각화 할 수 있다.
+메모리, cpu 사용률을 시각화 할 수 있다.
 
 - 1 , 0
 
-  ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/29ca8e57-98ed-490e-b971-2dfbc888f26f)
+![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/29ca8e57-98ed-490e-b971-2dfbc888f26f)
 
-  1은 cpu를 각 코어별로 확인할 수 있다.
+1은 cpu를 각 코어별로 확인할 수 있다.
 
-  0은 0 값을 없애준다.
+0은 0 값을 없애준다.
 
 - < , >
 
-  프로세스의 정렬 순서를 바꾼다.
+프로세스의 정렬 순서를 바꾼다.
 
 - J
 
-  프로세스의 각 요소를 왼쪽 정렬, 오른쪽 정렬 할 수 있다.
+프로세스의 각 요소를 왼쪽 정렬, 오른쪽 정렬 할 수 있다.
 
 - k
 
-  프로세스를 종료한다.
+프로세스를 종료한다.
 
 - d, s
 
-  갱신 시간을 바꾼다.
+갱신 시간을 바꾼다.
 
 - q
 
-  top 명령어를 종료한다.
+top 명령어를 종료한다.
 
 - h
 
-  명령어를 보여준다.
+명령어를 보여준다.
 
 
 
