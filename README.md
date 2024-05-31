@@ -10,7 +10,7 @@
 
 옵션 없이 입력하면 interval 간격(기본 3초)으로 화면을 갱신하며 정보를 보여준다.
 
-###### top 명령어 수행 시 나타나는 내용
+#### top 명령어 수행 시 나타나는 내용
 ```
 top - 09:37:25 up 12 min,  0 users,  load average: 0.02, 0.08, 0.09
 Tasks:   2 total,   1 running,   1 sleeping,   0 stopped,   0 zombie
@@ -99,7 +99,7 @@ TIME+ : 사용한 CPU 시간
 
 COMMAND : 명령어 이름
 
-###### top -b
+#### top -b
 
 순간 순간의 내용을 볼 수 있다.
 
