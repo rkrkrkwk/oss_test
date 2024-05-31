@@ -99,7 +99,6 @@ TIME+ : 사용한 CPU 시간
 
 COMMAND : 명령어 이름
 
-
 ### ps
 
 ### jobs
