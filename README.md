@@ -15,11 +15,11 @@
 ![캡처](https://github.com/rkrkrkwk/oss_test/assets/166924793/6178d3ee-325f-48c9-9e9f-5d56cd501f4f)
 
 
-- `top - 09:34:31 up 9 min,  0 users,
+- `top - 09:34:31 up 9 min,  0 users,`
 
 현재 시간과 서버가 구동되고있는 시간, 유저 수를 보여준다.
 
-- `load average: 0.00, 0.10, 0.11
+- `load average: 0.00, 0.10, 0.11`
 
 각각 1분, 5분, 15분 평균 프로세스 수를 보여준다.
 
