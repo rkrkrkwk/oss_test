@@ -10,7 +10,7 @@
 
 옵션 없이 입력하면 interval 간격(기본 3초)으로 화면을 갱신하며 정보를 보여준다.
 
-#### top 명령어 수행 시 나타나는 내용
+### top 명령어 수행 시 나타나는 내용
 ```
 top - 09:37:25 up 12 min,  0 users,  load average: 0.02, 0.08, 0.09
 Tasks:   2 total,   1 running,   1 sleeping,   0 stopped,   0 zombie
@@ -99,11 +99,73 @@ TIME+ : 사용한 CPU 시간
 
 COMMAND : 명령어 이름
 
-#### top -b
+### top -b
 
 순간 순간의 내용을 볼 수 있다.
 
 ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/29464940-4559-4a0b-ab05-f333905bb8f4)
+
+### top -n (숫자)
+
+해당 숫자만큼 실행하고 종료한다.
+
+만약 3일경우 3초마다 갱신되므로 9초동안 실행되고 종료된다.
+
+### top 실행 후 명령어
+
+- Z
+
+ ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/f3c0d218-bd3e-4b32-99ff-21f292e2bd02)
+
+ 각각 요소의 색을 커스텀 가능하다.
+
+ ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/4b108238-8eba-4406-9ce8-cf9877149952)
+
+- E , e
+
+ ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/64474fba-17d7-4d81-9b95-2ee5b1a4e8f6)
+
+ 단위를 바꿀 수 있다.
+
+- t, m
+
+ ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/1546fd46-e6a1-4e7b-b236-a73590a8df1c)
+
+ 메모리, cpu 사용률을 시각화 할 수 있다.
+
+- 1 , 0
+
+  ![image](https://github.com/rkrkrkwk/oss_test/assets/166924793/29ca8e57-98ed-490e-b971-2dfbc888f26f)
+
+  1은 cpu를 각 코어별로 확인할 수 있다.
+
+  0은 0 값을 없애준다.
+
+- < , >
+
+  프로세스의 정렬 순서를 바꾼다.
+
+- J
+
+  프로세스의 각 요소를 왼쪽 정렬, 오른쪽 정렬 할 수 있다.
+
+- k
+
+  프로세스를 종료한다.
+
+- d, s
+
+  갱신 시간을 바꾼다.
+
+- q
+
+  top 명령어를 종료한다.
+
+- h
+
+  명령어를 보여준다.
+
+
 
 ## ps
 
