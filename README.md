@@ -169,6 +169,117 @@ top 명령어를 종료한다.
 
 ## ps
 
+현재 실행 중인 프로세스와 상태를 출력해준다.
+
+### ps 명령어 수행 시 나타나는 내용
+```
+  PID TTY          TIME CMD
+    1 pts/0    00:00:00 bash
+   25 pts/0    00:00:00 ps
+```
+
+- PID : 프로세스 번호
+
+- TTY : 프로세스가 실행된 터미널
+
+- TIME : 총 CPU 사용 시간
+
+- CMD : 실행된 명령어
+
+### ps -F , ps -f
+```
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root         1     0  0  1062  3388   0 09:26 pts/0    00:00:00 /bin/bash
+root        43     1  0  1475  2772   2 14:03 pts/0    00:00:00 ps -F
+```
+```
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 09:26 pts/0    00:00:00 /bin/bash
+root        44     1  0 14:07 pts/0    00:00:00 ps -f
+```
+정보를 추가로 나타낸다. full format
+
+- UID : 유저 이름
+
+- PPID : 부모프로세스 번호
+
+- C : CPU 사용률
+
+- SZ : 가상 메모리 사용량
+
+- RSS : 실제 메모리 사용량
+
+- STIME : 프로세스가 시작된 시간
+
+### ps j , ps -j
+```
+  PID  PGID   SID TTY          TIME CMD
+    1     1     1 pts/0    00:00:00 bash
+   59    59     1 pts/0    00:00:00 ps
+```
+```
+ PPID   PID  PGID   SID TTY      TPGID STAT   UID   TIME COMMAND
+    0     1     1     1 pts/0       60 Ss       0   0:00 /bin/bash
+    1    60    60     1 pts/0       60 R+       0   0:00 ps j
+```
+
+정보를 추가로 나타낸다. job format
+
+- PGID : 프로세스 그룹 번호
+
+- SID : 세션 번호
+
+- TPGID : TTY 프로세스 그룹 번호
+
+- STAT : 프로세스의 상태
+
+### ps -l , ps l
+```
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S     0     1     0  0  80   0 -  1062 do_wai pts/0    00:00:00 bash
+0 R     0    61     1  0  80   0 -  1455 -      pts/0    00:00:00 ps
+```
+```
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
+4     0     1     0  20   0   4248  3392 do_wai Ss   pts/0      0:00 /bin/bash
+0     0    62     1  20   0   5820  1136 -      R+   pts/0      0:00 ps l
+```
+
+정보를 추가로 나타낸다. long format
+
+- F : 프로세스 플래그
+
+- PRI : 프로세스 우선순위
+
+- ADDR : 프로세스 메모리 주소
+
+- WCHAN : 프로세스 커널 루틴
+
+### ps s
+```
+  UID   PID          PENDING          BLOCKED          IGNORED           CAUGHT STAT TTY        TIME COMMAND
+    0     1 0000000000000000 0000000000010000 0000000000380004 000000004b817efb Ss   pts/0      0:00 /bin/bash
+    0    70 0000000000000000 0000000000000000 0000000000000000 00000001f3d1fef9 R+   pts/0      0:00 ps s
+```
+
+정보를 추가로 나타낸다. signal format
+
+- PENDING : 처리되지 않은 시그널
+
+- BLOCKED : 블럭된 시그널
+
+- IGNORED : 무시된 시그널
+
+- CAUGHT : 획득된 시그널
+
+### ps 
+
+
+
+
+
+
+
 ## jobs
 
 ## kill
