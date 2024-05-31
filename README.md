@@ -272,9 +272,29 @@ F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
 
 - CAUGHT : 획득된 시그널
 
-### ps 
+### ps u
+```
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   4248  3392 pts/0    Ss   09:26   0:00 /bin/bash
+root        82  0.0  0.0   5900  2824 pts/0    R+   14:51   0:00 ps u
+```
 
+정보를 추가로 나타낸다. user-oriented format
 
+### ps v
+```
+  PID TTY      STAT   TIME  MAJFL   TRS   DRS   RSS %MEM COMMAND
+    1 pts/0    Ss     0:00     54   705  3542  3392  0.0 /bin/bash
+   83 pts/0    R+     0:00      0    47  5772  1136  0.0 ps v
+```
+
+정보를 추가로 나타낸다. virtual memory format
+
+- MAJFL : major page fault
+
+- TRS : 
+
+- DRS : 
 
 
 
