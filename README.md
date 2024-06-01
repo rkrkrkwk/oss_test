@@ -317,4 +317,77 @@ root        82  0.0  0.0   5900  2824 pts/0    R+   14:51   0:00 ps u
 
 ## jobs
 
+백그라운드 프로세스들을 보여준다.
+
+`[1]+  Running                 sleep 100 &`
+
+### jobs -l
+`[1]+    81 Running                 sleep 100 &`
+
+ID를 보여준다.
+
+### jobs -n
+`[1]+  Running                 sleep 100 &`
+
+대표 프로세스를 보여준다.
+
+### jobs -p
+`81`
+
+프로세스의 ID만을 보여준다.
+
+### jobs -r, jobs -s
+`[1]+  Running                 sleep 100 &`
+
+옵션 -r의 경우 상태가 Running인 프로세스를 보여준다.
+
+옵션 -s의 경우 상태가 Stopped인 프로세스를 보여준다.
+
 ## kill
+
+`kill 옵션 ID`
+
+```
+root@0e677aa5c9a2:/# ps
+  PID TTY          TIME CMD
+    1 pts/0    00:00:00 bash
+   90 pts/0    00:00:00 sleep
+   91 pts/0    00:00:00 ps
+root@0e677aa5c9a2:/# kill 90
+root@0e677aa5c9a2:/# ps
+  PID TTY          TIME CMD
+    1 pts/0    00:00:00 bash
+   92 pts/0    00:00:00 ps
+[1]+  Terminated              sleep 100000
+```
+
+해당 ID의 프로세스를 종료시켜준다.
+
+### kill -s , kill -n
+
+`kill -s signal ID`
+
+signal에 해당하는 시그널을 해당 ID의 프로세스로 보낸다.
+
+`kill -n signal_number ID`
+
+signal_number에 해당하는 시그널을 해당 ID의 프로세스로 보낸다.
+
+### kill -l
+```
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
+16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
+26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
+31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+48) SIGRTMIN+14 49) SIGRTMIN+15 50) SIGRTMAX-14 51) SIGRTMAX-13 52) SIGRTMAX-12
+53) SIGRTMAX-11 54) SIGRTMAX-10 55) SIGRTMAX-9  56) SIGRTMAX-8  57) SIGRTMAX-7
+58) SIGRTMAX-6  59) SIGRTMAX-5  60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
+63) SIGRTMAX-1  64) SIGRTMAX
+```
+
+signal에 들어갈 수 있는 내용들을 보여준다.
