@@ -290,15 +290,30 @@ root        82  0.0  0.0   5900  2824 pts/0    R+   14:51   0:00 ps u
 
 정보를 추가로 나타낸다. virtual memory format
 
-- MAJFL : major page fault
+- MAJFL : major page fault 횟수
 
-- TRS : 
+- TRS : 텍스트 세그먼트 크기
 
-- DRS : 
+- DRS : 데이터 세그먼트 크기
 
+### ps X
+```
+  PID           STACKP              ESP              EIP TMOUT ALARM STAT TTY        TIME COMMAND
+    1 00007ffcec79ebd0 0000000000000000 0000000000000000     -     - Ss   pts/0      0:00 /bin/bash
+   20 00007ffeb9aa8f00 0000000000000000 0000000000000000     -     - R+   pts/0      0:00 ps X
+```
 
+정보를 추가로 나타낸다. register format
 
+- STACKP :  ps 명령어에서 제공하는 간접적인 스택 포인터 정보
+  
+- ESP : 프로세스 내부 실제 스택 포인터 주소
 
+- EIP : 현재 실행 위치
+
+- TMOUT : 시간초과 값
+
+- ALARM : alarm 함수
 
 ## jobs
 
